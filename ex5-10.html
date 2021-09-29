@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ex5-10</title>
+	<style>
+		table{
+			border-collapse: collapse;
+		}
+		td, th{
+			text-align: left;
+			padding: 5px;
+			height: 15px;
+			width: 100px;
+		}
+		thead, tfoot{
+			background: darkgray;
+			color: yellow;
+		}
+		tbody tr:ntn-child(even){
+			background: aliceblue;
+		}
+		tbody tr:hover{
+			background: pink;
+		}
+	</style>
+</head>
+<body>
+	<h3>1학기 성적</h3>
+	<hr>
+	<table>
+		<thead>
+			<tr><th>이름</th><th>html</th><th>CSS</th></tr>
+		</thead>
+
+		<tfoot>
+			<tr><th>total</th><th>310</th><th>249</th></tr>
+		</tfoot>
+
+		<tbody>
+			<tr><td>kitae</td><td>80</td><td>70</td></tr>
+			<tr><td>kitae</td><td>90</td><td>80</td></tr>
+			<tr><td>kitae</td><td>100</td><td>90</td></tr>
+		</tbody>
+	</table>
+
+
+</body>
+</html>

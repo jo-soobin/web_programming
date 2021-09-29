@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ex6-6</title>
+</head>
+<body>
+	<h3>지역변수와 전역 변수</h3>
+	<hr>
+	<script>
+		var x=100;
+		function f() {
+			var x=1;
+			document.write("지역변수 x= "+ x);
+			document.write("<br>")
+			document.write("전역변수 x= "+ this.x);
+		}
+		f();
+	</script>
+	<br>
+	<script>
+		var y=700;
+		function f() {
+			var y=3;
+			document.write("지역변수 y= "+y);
+			document.write("<br>")
+			document.write("전역변수 y= "+this.y);
+		}
+		f();
+	</script>
+</body>
+</html>

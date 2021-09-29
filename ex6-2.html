@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ex6-2</title>
+</head>
+<body>
+	<script>
+		function over(obj) {
+			obj.src="media/banana.jpg";
+		}
+		function out(obj) {
+			obj.src="media/apple.png";
+		}
+	</script>
+	<h3>마우스를 올려 보세요</h3>
+	<hr>
+	<img src="media/apple.png" alt="apple"
+	onmouseover="over(this)"
+	onmouseout="out(this)">
+</body>
+</html>

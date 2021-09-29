@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ex6-13</title>
+	<script>
+		function digit(v) {
+			var str="";
+			for (i=0; i<8; i++, v<<=1) {
+				if((v &0x80)) str += "1";
+				else str += "0";
+			}
+			return str;
+		}
+	</script>
+</head>
+<body>
+	<h3>비트 논리 연산과 시프트 연산</h3>
+	<hr>
+	<script>
+		var x=10, y=3;
+		document.write("x="+x+", y="+y+"<br>");
+		document.write("x:     "+digit(x)+"<br>")
+		document.write("y:     "+digit(y)+"<br>");
+		document.write("<hr>");
+		document.write("x&y:   "+digit(x&y)+"<br>");
+		document.write("x|y:   "+digit(x|y)+"<br>");
+		document.write("x^y:   "+digit(x^y)+"<br>");
+		document.write("~x:   "+digit(~x)+"<br>");
+		document.write("<hr>");
+		document.write("x<<1:   "+digit(x<<1)+"("+(x<<1)+")<br>");
+		document.write("x>>y:   "+digit(x>>1)+"("+(x>>1)+")<br>");
+		document.write("x>>>1:   "+digit(x>>>1)+"("+(x>>>1)+")<br>");
+		document.write("</pre>");
+	</script>
+</body>
+</html>
